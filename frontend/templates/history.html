@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}History{% endblock %}
+{% block content %}
+<h1>Planning History</h1>
+{% if history %}
+<div class="history-list">
+{% for item in history %}
+<article class="history-item">
+    <span class="badge">{{ item.category }}</span>
+    <p>{{ item.result }}</p>
+</article>
+{% endfor %}
+</div>
+{% else %}
+<div class="empty"><h2>No history yet</h2><p>Generate a plan after logging in to build your history.</p></div>
+{% endif %}
+{% endblock %}

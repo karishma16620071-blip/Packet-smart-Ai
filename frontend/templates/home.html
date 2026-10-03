@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Home Planner{% endblock %}
+{% block content %}
+<div class="form-card">
+<h1>🏠 Home Planner</h1>
+<p class="muted">Tell us your room and budget.</p>
+<form class="planner-form" data-endpoint="/generate-home">
+    <label>Budget (₹)<input type="number" name="budget" min="1" required placeholder="10000"></label>
+    <label>Room<input type="text" name="room" required placeholder="Bedroom"></label>
+    <button class="button" type="submit">Generate Plan</button>
+</form>
+<div id="result" class="result hidden"></div>
+</div>
+{% endblock %}

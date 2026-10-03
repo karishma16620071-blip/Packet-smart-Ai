@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h1>Your Smart Planners</h1>
+<p class="muted">Choose a planner and let AI create a practical starting plan.</p>
+<section class="grid">
+    <article class="card"><div class="icon">🏠</div><h2>Home</h2><p>Room, decor and budget planning.</p><a class="button" href="/home">Open Planner</a></article>
+    <article class="card"><div class="icon">🎉</div><h2>Party</h2><p>Guests, occasion and expense planning.</p><a class="button" href="/party">Open Planner</a></article>
+    <article class="card"><div class="icon">💎</div><h2>Jewelry</h2><p>Occasion, style and budget guidance.</p><a class="button" href="/jewelry">Open Planner</a></article>
+</section>
+{% endblock %}
